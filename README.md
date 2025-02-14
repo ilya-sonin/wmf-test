@@ -15,11 +15,15 @@ packages/
 ## Быстрый старт
 
 ```bash
-# Установка зависимостей
-./setup.sh
+# Установка
+npm install        # корневые зависимости
 
-# Запуск всех приложений
-npm start
+# Разработка
+npm start         # запуск всех приложений
+npm run build     # сборка всех приложений
+
+# Очистка
+npm run clean     # удаление node_modules и dist
 ```
 
 После запуска приложения доступны по адресам:
@@ -79,18 +83,3 @@ npm run build
 - DaisyUI
 - Webpack 5
 - Lerna
-
-## Команды
-
-```bash
-# Установка
-npm install        # корневые зависимости
-lerna bootstrap   # зависимости пакетов
-
-# Разработка
-npm start         # запуск всех приложений
-npm run build     # сборка всех приложений
-
-# Очистка
-npm run clean     # удаление node_modules и dist
-```
