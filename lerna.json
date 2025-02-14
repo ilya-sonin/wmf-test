@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "npmClient": "npm",
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  },
+  "scripts": {
+    "dev:host": "lerna run start --scope=@mf/host-portal",
+    "dev:shared": "lerna run start --scope=@mf/shared-components",
+    "dev:micro1": "lerna run start --scope=@mf/microfront1",
+    "dev:micro2": "lerna run start --scope=@mf/microfront2",
+    "dev:all": "lerna run start --parallel"
+  },
+  "packages": [
+    "packages/*"
+  ]
+} 

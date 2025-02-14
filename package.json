@@ -1,0 +1,26 @@
+{
+  "name": "vue3-microfrontends",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "setup": "./setup.sh"
+  },
+  "devDependencies": {
+    "lerna": "^7.4.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "version": "1.0.0",
+  "description": "Проект демонстрирует реализацию микрофронтенд архитектуры с использованием Vue 3 и Webpack Module Federation.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
